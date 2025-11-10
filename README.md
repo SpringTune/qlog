@@ -15,9 +15,11 @@ qlog::LogBook logbook;
 logbook.level = qlog::INFO;
 
 // Add logs
-logbook.add_info("Init");
-logbook.add_warning("Unexpected output");
-logbook.add_info("Quit");
+logbook.add_debug("Log message");
+logbook.add_info("Log message");
+logbook.add_warning("Log message");
+logbook.add_error("Log message");
+logbook.add_fatal("Log message");
 
 // Print and clear logs
 logbook.print();
