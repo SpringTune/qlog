@@ -1,4 +1,4 @@
-# qlog library
+# qlog
 
 This repository contains a C++ library for logging.
 
