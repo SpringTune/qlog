@@ -4,7 +4,10 @@ This repository contains a C++ library for logging.
 
 ## Features
 
-Logging is done via LogBook which holds Log.
+LogBook is the main class used to handle logging.
+Logs are incrementally added to the logbook to be printed in bulk at a later time.
+
+Here is a small snippet of how to use the library:
 
 ```
 // Initialise logbook
