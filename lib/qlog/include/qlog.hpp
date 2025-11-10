@@ -3,5 +3,6 @@
 
 #include <qlog/LogLevel.hpp>
 #include <qlog/Log.hpp>
+#include <qlog/LogBook.hpp>
 
 #endif

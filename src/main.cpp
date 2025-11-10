@@ -4,20 +4,16 @@
 int main() {
 
     // Testing Log
-    qlog::Log log0 = qlog::Log(qlog::DEBUG,   "Log message");
-    qlog::Log log1 = qlog::Log(qlog::INFO,    "Log message");
-    qlog::Log log2 = qlog::Log(qlog::WARNING, "Log message");
-    qlog::Log log3 = qlog::Log(qlog::ERROR,   "Log message");
-    qlog::Log log4 = qlog::Log(qlog::FATAL,   "Log message");
-    qlog::Log log5 = qlog::Log((qlog::LogLevel)6,   "Log message");
+    qlog::LogBook logbook;
+    logbook.level = qlog::INFO;
 
-    qlog::LogLevel threshold_level = qlog::DEBUG;
-    log0.print(threshold_level);
-    log1.print(threshold_level);
-    log2.print(threshold_level);
-    log3.print(threshold_level);
-    log4.print(threshold_level);
-    log5.print(threshold_level);
+    logbook.add_debug("Log message");
+    logbook.add_info("Log message");
+    logbook.add_warning("Log message");
+    logbook.add_error("Log message");
+    logbook.add_fatal("Log message");
+
+    logbook.print();
 
     return 0;
 }
